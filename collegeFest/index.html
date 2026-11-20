@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>COLLEGE FEST 2026</h1>
+            <p>Register now and be a part of the celebration!</p>
+        </div>
+
+        <form>
+
+            <h2>Student Registration Form</h2>
+
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Email Address:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" required>
+
+
+
+            <label>Gender:</label>
+
+            <div class="options">
+                <input type="radio" name="gender" value="Male" required>
+                Male
+
+                <input type="radio" name="gender" value="Female">
+                Female
+
+                <input type="radio" name="gender" value="Other">
+                Other
+            </div>
+
+           
+
+            <label>Course:</label>
+
+            <select required>
+                <option value="">Select your course</option>
+                <option>B.Tech</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>B.Sc</option>
+                <option>MCA</option>
+                <option>MBA</option>
+            </select>
+
+            <label>College Name:</label>
+            <input type="text" placeholder="Enter your college name" required>
+
+            
+
+            <label>Select Your Events:</label>
+
+            <div class="event-options">
+                <input type="checkbox" name="event" value="Dance">
+                Dance Competition
+
+                <br>
+
+                <input type="checkbox" name="event" value="Singing">
+                Singing Competition
+
+                <br>
+
+                <input type="checkbox" name="event" value="Coding">
+                Coding Competition
+
+                <br>
+
+                <input type="checkbox" name="event" value="Photography">
+                Photography
+
+                <br>
+
+                <input type="checkbox" name="event" value="Sports">
+                Sports
+
+                <br>
+
+                <input type="checkbox" name="event" value="Fashion">
+                Fashion Show
+            </div>
+
+            <label>Registration Date:</label>
+            <input type="date" required>
+
+            <label>Why do you want to participate?</label>
+            <textarea rows="4" placeholder="Write something about yourself..."></textarea>
+
+            
+
+            <div class="terms">
+                <input type="checkbox" required>
+                I agree to the terms and conditions.
+            </div>
+
+            
+
+            <div class="buttons">
+                <button type="submit">Register Now</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+
+        </form>
+
+        <footer>
+            <p>© 2026 College Fest | All Rights Reserved</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
